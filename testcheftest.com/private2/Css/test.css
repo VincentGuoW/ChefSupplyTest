@@ -30,7 +30,7 @@
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 18px;
-    max-width: 50px;
+    max-width: 100px;
   }
   
   .testProduct p {
@@ -58,7 +58,7 @@
   }
   
   .testProduct button:hover {
-    background-color: rgb(255, 176, 176);
+    background-color: red;
   }
 
   @media screen and (max-width: 768px) {

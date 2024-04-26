@@ -7,30 +7,28 @@ fetchTest(urlTest);
 
 //Product setup in html=>
 /***************************************************************************/
-let products = [
+let products = [];
 
-];
-
-fetchTest(urlTest).then((data) => {
-    productObject = data;
-    updateProductsList()
+fetchTest(urlTest)
+  .then(() => {
+    updateProductsList();
   })
   .catch((error) => {
     console.error("Error fetching :", error);
   });
 
 function updateProductsList() {
-    const newProduct = {
-      image: productObject[0].image[0].image,
-      brand: productObject[0].brand,
-      manufacture: productObject[0].manufacture,
-      names: productObject[0].name,
-      price: productObject[0].price.toFixed(2),
-    };
-    console.log(newProduct);
-    products.push(newProduct); 
-    loadProductsIntoDiv(products); 
-  }
+  const newProduct = {
+    image: productObject[0].image[0].image,
+    brand: productObject[0].brand,
+    manufacture: productObject[0].manufacture,
+    names: productObject[0].name,
+    price: productObject[0].price.toFixed(2),
+  };
+  console.log(newProduct);
+  products.push(newProduct);
+  loadProductsIntoDiv(products);
+}
 
 function productCreator(products) {
   return `
@@ -86,7 +84,6 @@ function fetchTest(url) {
       .then((data) => {
         console.log(data);
         productObject = data;
-      
       })
       .catch((error) => {
         console.error("Fetch error:", error);
@@ -97,4 +94,3 @@ function fetchTest(url) {
     throw error;
   }
 }
-

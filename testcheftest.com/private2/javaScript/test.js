@@ -5,6 +5,52 @@ fetchTest(urlTest);
 /*Please enter your code here. Don't change the existing function! */
 
 
+//Product setup in html=>
+/***************************************************************************/
+let products = [
+  {cardName:"Beverage Air - Garland Canada",
+  cardBrand:"Refrigerator, Reach-In",
+  cardPrice:"6024.32",
+  img:"https:\/\/api.aq-fes.com\/products-api\/resources\/pictures\/ab635df2-9600-4f2f-81bd-f93abeaf6533\/picture.jpg?subscription-key=f42c52828dea4c69aefb41c9deed2184"},
+  
+  ]
+
+
+function productCreator(products){
+  return  `
+    <div class="testProduct">
+      <img src="${products.img}" alt="This is a picture for: ${products.cardName}">
+      <div><h5>${products.cardName}</h5></div>
+      <div><h4>${products.cardBrand}</h4></div>
+     <div><p>Price:$${products.cardPrice}</p></div>
+     <div>
+       <i></i>
+       <div>0</div>
+       <i></i>
+       <button>Add to Cart</button>
+     </div>
+   </div>
+ `;
+}
+//upload on the web=>
+/***************************************************************************/
+function loadProductsIntoDiv(products) {
+ let divproducts = document.getElementById("sampleProduct");
+ divproducts.innerHTML = ""; 
+
+ for (let i = 0; i < products.length; i++) {
+   let product = products[i];
+   let productHTML = productCreator(product);
+   divproducts.innerHTML += productHTML;
+ }
+}
+
+window.onload = function() {
+ loadProductsIntoDiv(products);
+};
+/***************************************************************************/
+
+
 
 function fetchTest(url) {
     try {

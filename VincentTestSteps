@@ -1,2 +1,42 @@
+/*
 1. .zip folder being rejected
-2. download google "Save All Resources" to get all the files from the url.
+2. download google "Save All Resources" to get all the files from the url. upload on github. HTTPS: https://github.com/VincentGuoW/ChefSupplyTest.git
+3. Check request: 
+        a. coding in css & JavaScript
+        b. add one product
+        c. product info & photo exist AND from API
+        d. display product from existing API
+4. Find the product info and photo first.
+        a. function brandSelector(brands) under functions.js => get the url
+        b. test one picture url form it. works.
+5. Test pic, name, price able to upload on page before link to database.
+    let products = [
+    {name:"a",price:"10",img:"https:"},
+    {name:"b",price:"20",img:"https:"},
+    {name:"c",price:"30",img:"https:"},
+    ]
+    function productCreator(products){
+    return  `
+        <div class="testProduct">
+        <img src="${products.img}" alt="This is a picture for: ${products.name}">
+        <h3>Price:${products.price}</h3>
+        </div>
+    `;
+    }
+    function loadProductsIntoDiv(products) {
+    let divproducts = document.getElementById("sampleProduct");
+    divproducts.innerHTML = ""; 
+
+    for (let i = 0; i < products.length; i++) {
+        let product = products[i];
+        let productHTML = productCreator(product);
+        divproducts.innerHTML += productHTML;
+    }
+    }
+
+    window.onload = function() {
+    loadProductsIntoDiv(products);
+    };    
+6. Found issue: Fetch / Wrong product.
+    Redownload the file, and test the fetch.
+    Can't pass the fetch, going for node js.

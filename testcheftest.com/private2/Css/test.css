@@ -24,13 +24,15 @@
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 18px;
+    font-weight: bold;
+    
   }
 
   .testProduct h5 {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 18px;
-    max-width: 100px;
+    
   }
   
   .testProduct p {
@@ -61,7 +63,7 @@
     background-color: red;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .testProduct {
       max-width: 100%; 
       margin-top: 30px; 

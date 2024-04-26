@@ -34,8 +34,8 @@ function productCreator(products) {
   return `
     <div class="testProduct">
       <img src="${products.image}" alt="This is a picture for: ${products.names}">
-      <div><h5>${products.brand},By ${products.manufacture}</h5></div>
-      <div><h4>${products.names}</h4></div>
+      <div><h2>${products.brand},By ${products.manufacture}</h2></div>
+      <div><h5>${products.names}</h5></div>
    
      <div><p>Price:$${products.price}</p></div>
      <div>

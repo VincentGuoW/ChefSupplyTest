@@ -40,3 +40,36 @@
 6. Found issue: Fetch / Wrong product.
     Redownload the file, and test the fetch.
     Can't pass the fetch, going for node js.
+    nodejs will change all the file. Google online will close cors for testing=>
+        Window + R 
+        ==>
+        type:  chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
+        ==>
+        copy web and arry shows up.
+
+7. Test before link to the website.
+    fetchTest(urlTest)
+        .then(() => {
+        
+            let image=productObject[0].image[0].image;
+            let brand=productObject[0].brand;
+            let manufacture=productObject[0].manufacture;
+            let name=productObject[0].name;
+            let price=productObject[0].price.toFixed(2);
+            console.log(image);
+            console.log(brand);
+            console.log(manufacture);
+            console.log(name);
+            console.log(price);
+            //image
+            //brand +"by"
+            //manufacture
+            //name
+            //price
+            
+        })
+        .catch((error) => {
+            console.error("Error fetching data:", error);
+        });
+        */
+

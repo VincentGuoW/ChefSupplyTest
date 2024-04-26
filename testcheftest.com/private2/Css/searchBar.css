@@ -1,0 +1,402 @@
+
+#ResponsiveBar{
+    display: none;
+}
+.rowSearch{
+    display: flex;
+    margin-left: 17%;
+    width: 70%;
+    height: 20px;
+    padding: 30px 10px;
+    background-color: #D9D9D9;
+    border: 1px solid gray;
+    border-radius: 20px;
+    align-items: center;
+}
+.searchHeader input, #ResponsiveBar input{
+    margin-top: 0px;
+    margin-left: -10px;
+    width: 50px;
+    height: 20px;
+    font-size: 20px;
+    padding: 20px 10px;
+    flex: 1;
+    border-radius: 30px;
+    background: transparent;
+    border: none;
+    outline: 0;
+}
+
+::placeholder{
+    color: #555;
+}
+header button{
+    margin-left: 0px;
+   
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.container img{
+    text-align: center;
+}
+.not-found-image {
+    text-align: center;
+    width: 80%; 
+    height: auto; 
+    overflow: hidden;
+  }
+.resultBox, .resultBox1{
+    margin-top: 0px;
+    margin-left: 13%;
+    background-color: #D9D9D9;
+    width: 46%;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    position: absolute;
+    z-index: 2000;
+    color: #555;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.resultBox ul, .resultBox1 ul{
+   padding: 1px 10px;
+   
+}
+
+.resultBox ul li, .resultBox1 ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+   
+}
+.resultBox ul li:hover, .resultBox1 ul li:hover{
+    background: #e9f3ff;
+    color: black;
+}
+
+.resultBox, .resultBox1{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 1860px) {
+    .resultBox, .resultBox1{
+        width: 46%;
+        margin-left: 12%;
+    }
+}
+@media screen and (max-width: 1790px) {
+    .resultBox, .resultBox1{
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 1710px) {
+    .resultBox, .resultBox1{
+        width: 44%;
+    }
+}
+@media screen and (max-width: 1670px) {
+    .resultBox, .resultBox1{
+        width: 43%;
+    }
+}
+@media screen and (max-width: 1597px) {
+    .resultBox, .resultBox1{
+        width: 42%;
+    }
+}
+@media screen and (max-width: 1546px) {
+    .resultBox, .resultBox1{
+        width: 41%;
+    }
+    
+}
+@media screen and (max-width: 1504px) {
+    .resultBox, .resultBox1{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1470px) {
+    .resultBox, .resultBox1{
+        margin-left: 11%;
+    }
+}
+@media screen and (max-width: 1431px) {
+    .resultBox, .resultBox1{
+        width: 46%;
+        margin-left: 12%;
+    }
+     .rowSearch{
+        height: 18px;
+        padding: 25px 10px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1390px) {
+    .resultBox, .resultBox1{
+        width: 45%;
+    }
+    
+}
+
+@media screen and (max-width: 1335px) {
+    .resultBox, .resultBox1{
+        width: 44%;
+    }
+    
+}
+@media screen and (max-width: 1330px) {
+    .resultBox, .resultBox1{
+        width: 43%;
+    }
+    
+}
+@media screen and (max-width: 1276px) {
+    .resultBox, .resultBox1{
+        width: 42%;
+    }  
+}
+@media screen and (max-width: 1215px) {
+    .resultBox, .resultBox1{
+        width: 41%;
+    }  
+}
+@media screen and (max-width: 1195px) {
+    .resultBox, .resultBox1{
+        width: 40%;
+    }  
+}
+@media screen and (max-width: 1153px) {
+    .resultBox, .resultBox1{
+        margin-left: 13%;
+    }
+     .rowSearch{
+        height: 17px;
+        padding: 19px 10px;
+        margin-top: 18px;
+        margin-left: 20%;
+    }
+    
+}
+@media screen and (max-width: 1133px) {
+    .resultBox, .resultBox1{
+        width: 39%;
+    }
+}
+@media screen and (max-width: 1106px) {
+    .resultBox, .resultBox1{
+        width: 38%;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .resultBox, .resultBox1{
+        width: 37%;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .resultBox, .resultBox1{
+        width: 36%;
+    }
+}
+@media screen and (max-width: 1015px) {
+    .resultBox, .resultBox1{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .resultBox, .resultBox1{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .rowSearch{
+        width: 80%;
+        margin-left: 8%;
+    }
+    .resultBox, .resultBox1{
+        width: 45%;
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width: 970px) {
+    .rowSearch{
+        width: 80%;
+    }
+    .resultBox, .resultBox1{
+        margin-left: 6%;
+    }
+}
+@media screen and (max-width: 946px) {
+    .resultBox, .resultBox1{
+        width: 44%;
+    }
+}
+@media screen and (max-width: 910px) {
+    .resultBox, .resultBox1{
+        width: 43%;
+    }
+}
+@media screen and (max-width: 897px) {
+    .resultBox, .resultBox1{
+        width: 42%;
+    }
+}
+@media screen and (max-width: 872px) {
+    .resultBox, .resultBox1{
+        width: 41%;
+    }
+}
+@media screen and (max-width: 866px) {
+    .rowSearch{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .resultBox, .resultBox1{
+        width: 62%;
+        margin-left: 1%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .resultBox, .resultBox1{
+        width: 61%;
+    }
+}
+@media screen and (max-width: 830px) {
+    .resultBox, .resultBox1{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 810px) {
+    .resultBox, .resultBox1{
+        width: 59%;
+    }
+}
+@media screen and (max-width: 790px) {
+    .resultBox, .resultBox1{
+        width: 58%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .resultBox, .resultBox1{
+        width: 57%;
+    }
+}
+@media screen and (max-width: 740px) {
+    .resultBox, .resultBox1{
+        width: 56%;
+    }
+}
+@media screen and (max-width: 740px) {
+    .resultBox, .resultBox1{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 713px) {
+    .resultBox, .resultBox1{
+        width: 54%;
+    }
+}
+@media screen and (max-width: 694px) {
+    .resultBox, .resultBox1{
+        width: 53%;
+    }
+}
+@media screen and (max-width: 684px) {
+    .resultBox, .resultBox1{
+        width: 52%;
+    }
+}
+@media screen and (max-width: 670px) {
+    .resultBox, .resultBox1{
+        width: 51%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .resultBox, .resultBox1{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .resultBox, .resultBox1{
+        width: 49%;
+    }
+}
+@media screen and (max-width: 630px) {
+    .resultBox, .resultBox1{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .resultBox, .resultBox1{
+        width: 47%;
+    }
+}
+@media screen and (max-width: 610px) {
+    .resultBox, .resultBox1{
+        width: 46%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .resultBox, .resultBox1{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 590px) {
+    .resultBox, .resultBox1{
+        width: 44%;
+    }
+}
+@media screen and (max-width: 576px) {
+     .callus, .logoHeder, .anniv, .shipping{
+        display: none;
+    }
+    header{
+        background-color: #CF1715;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: auto auto 70px 50px;
+        grid-gap: 10px;
+        z-index: 999;
+      
+      }
+    .logoResponsive{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #cart{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .logingNav{
+        grid-column: 4;
+        grid-row: 1;
+    }
+    #ResponsiveBar{
+        grid-column: 1  / span 4;
+        grid-row: 2;
+        display: block;
+        width: 100%;
+      
+        background-color: #D9D9D9;
+    }
+    .rowSearch{
+        width: 90%;
+        margin-left: 4%;
+    }
+    .resultBox, .resultBox1{
+        width: 85%;
+        margin-left: 6%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .logoResponsive img{
+        width: 150px;
+    }
+   
+}

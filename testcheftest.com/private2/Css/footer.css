@@ -1,0 +1,292 @@
+
+
+footer{
+    background-image: url("../footer_images/Website-Footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+	grid-template-columns: 210px auto auto auto auto;
+    grid-template-rows: 50px 100px;
+	grid-gap: 10px;
+}
+.socialSmall{
+    height: 30px;
+}
+.logoFooter{
+    width: 150px;
+}
+
+
+.foterHide{
+    display: none;
+}
+.flogo{
+    margin-left: 20px;
+    height: auto;
+    grid-column: 1;
+	grid-row: 1 / span 2;
+    text-align: left;
+}
+
+footer h4{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.fsocialMedia{
+    grid-column: 1;
+	grid-row: 3;
+    text-align: center;
+}
+.addressfo{
+    grid-column: 2;
+	grid-row: 1; 
+}
+.callfo{
+    grid-column: 2;
+	grid-row: 2;
+}
+.fus{
+    grid-column: 3;
+	grid-row: 1;
+}
+.faccount{
+    grid-column: 4;
+	grid-row: 1;
+}
+.fpolicies{
+    grid-column: 5;
+	grid-row: 1;
+}
+.copyright{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.70em;
+    border-top: 1px solid rgb(204, 201, 201);
+    max-width: 50%;
+    margin-left: 25%;
+    grid-column: 1 / span 5;
+	grid-row: 3;
+}
+
+.fus, .faccount, .faccount, .fpolicies p{
+    font-size: 0.90em;
+}
+
+.logoFooter{
+    max-width: 160px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.socialFooter{
+    max-width: 30px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.pinFooter{
+    max-width: 50px;
+    height: auto;
+}
+
+.address{
+    font-size: 1.4rem;
+}
+
+.phone{
+    font-size: 1.7rem;
+    grid-column: 2;
+	grid-row: 1;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.addressfo{
+    display: grid;
+    grid-template-columns: 50px auto ;
+}
+
+.addressLogo{
+    margin-top: 5px;
+    max-width: 50px;
+    float: left;
+}
+.fphone{
+    margin-top: 10px;
+    grid-column: 1;
+	grid-row: 1;
+    margin-right: 0px;
+}
+
+.phoneLogo{
+    max-width: 40px;
+}
+
+.fus p, .faccount p, .fpolicies p{
+    margin: 10px;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1301px) {
+  
+    .logoFooter{
+        max-width: 150px;
+    }
+    .phoneLogo{
+        max-width: 40px;
+    }
+    footer{
+        grid-template-columns: 200px auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1202px) {
+   
+    .logoFooter{
+        max-width: 140px;
+    }
+    footer{
+        grid-template-columns: 190px auto auto auto auto;
+    }
+    .address{
+        font-size: 1.3rem;
+    }
+    .phone{
+        font-size: 1.6rem;
+    }
+    .phoneLogo{
+        max-width: 30px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 1108px) {
+    .address{
+        font-size: 1.1rem;
+    }
+    .phone{
+        font-size: 1.4rem;
+    }
+    footer h4{
+        font-size: 1.3rem;
+    }
+    .logoFooter{
+        max-width: 130px;
+        margin-left: 0px;
+    }
+    footer{
+        grid-template-columns: 150px 250px auto auto auto;
+       
+    }
+   
+    footer{
+        padding: 20px 10px;
+    }
+    .socialMedia{
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .phoneLogo{
+        max-width: 25px;
+    }
+    .addressLogo{
+        max-width: 30px;
+    }
+    .logoFooter{
+        max-width: 100px;
+    } footer{
+        grid-template-columns: 150px auto auto ;
+        grid-template-rows: 50px 80px;
+    }
+    .socialSmall{
+        height: 20px;
+    }
+    .foterHide{
+        display: block;
+        grid-column: 4;
+    }
+    h3{
+        padding-bottom: 20px;
+    }
+    
+    .fus, .faccount, .fpolicies{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    footer{
+        grid-template-columns: 140px auto auto ;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    
+}
+@media screen and (max-width: 698px) {
+    .address{
+        font-size: 0.9rem;
+    }
+    .phone{
+        font-size: 1.2rem;
+    }
+    footer h4{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 655px) {
+    .phone{
+        font-size: 1.1rem;
+    }
+    footer h4{
+        font-size: 1rem;
+    }
+    .logoFooter{
+        max-width: 90px;
+    }
+    footer{
+        grid-template-columns: 120px auto auto ;
+    }
+    .phoneLogo{
+        max-width: 20px;
+    }
+    .addressLogo{
+        max-width: 20px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .logoFooter{
+        max-width: 80px;
+    }
+    footer{
+        grid-template-columns: 100px auto auto ;
+    }
+    .phone{
+        font-size: 1rem;
+    }
+    
+}  
+
+@media screen and (max-width: 580px) {
+    
+    .flogo{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+   
+ 
+}

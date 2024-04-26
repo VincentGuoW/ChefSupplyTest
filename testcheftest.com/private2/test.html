@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>The Chef Supply - Hamilton, On</title>
+
+		<!--Java Script link-->
+		<script src="javaScript/variables.js?ver=<?php echo filemtime('variables.js'); ?>"></script>
+		<script src="javaScript/functions.js?ver=<?php echo filemtime('functions.js'); ?>"></script>
+		<script src="javaScript/navBar.js?ver=<?php echo filemtime('navBar.js'); ?>"></script>
+		<script src="javaScript/searchBar.js?ver=<?php echo filemtime('searchBar.js'); ?>" defer></script>
+		<script src="javaScript/navBar2.js?ver=<?php echo filemtime('navBar2.js'); ?>"></script>
+        <script src="javaScript/test.js"></script>
+
+	
+		<!--Google font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+		
+         <!--BootStrap-->
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Own Style-->
+		<link href="Css/footer.css?ver=<?php echo filemtime('footer.css'); ?>" type="text/css" rel="stylesheet">
+		<link href="Css/header.css?ver=<?php echo filemtime('header.css'); ?>" type="text/css" rel="stylesheet">
+        <link href="Css/searchBar.css?ver=<?php echo filemtime('searchBar.css'); ?>" type="text/css" rel="stylesheet">
+		<link href="Css/test.css" type="text/css" rel="stylesheet">
+
+
+		<!--External Css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	
+	<body>
+		
+		 <!-------------------------------Header----------------------->
+		 
+			<header>
+				<div id="logoHeder" >
+					<a href="index.html"><img alt="Cheff Supply Logo"  src="./header_images/logo_shadow1.png"></a>
+				</div>
+		
+				<div class="anniv ">
+					<img id="noShow" alt="anniversary logo"  src="./header_images/60_years.png">
+				</div>
+			
+				<div class="callus">
+					<a href="tel:+19055235250"><img id="noShow" alt="call us image"   src="./header_images/call_us.png"></a>
+				</div>
+				
+				<div class="searchHeader" id="searchBeforeResponsive">
+					
+				</div>
+				
+				<div id="shipping" >
+					<img id="shipping" alt="Shipping"  src="header_images/Website_Logos_and_Pictures.png">
+				</div>
+	<!--------------------------------------------NAVIGATION BAR BEGINS---------------------------------------------->
+				<nav>
+					<div class="navBarUl">
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+						</a>
+						<ul class="menu" id="menu">
+							<li class="menu-item"><div>EQUIPMENT <i class="fa fa-caret-down"></i></div>
+								<ul class="submenu">
+									<li class="submenu-item"><div>Refrigeration <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Reach-Ins">Reach-Ins</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PrepTables">Prep Tables</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Merchandisers">Merchandisers</a></li> 
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BottleBackBarCoolers">Bottle & Back Bar Coolers </a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Undercounters"> Undercounters </a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BlastChillers">Blast Chillers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=GlassFroster">Glass Froster</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=DisplayCase">Display Case</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Cooking <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href='category.html?productCategory=CommercialRanges'>Commercial Ranges</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Fryers">Fryers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Griddles">Griddles </a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Charbroilers">Charbroilers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Ovens">Ovens</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CombiOvens"> Combi-Ovens</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MicrowaveOvens">Microwave Ovens</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PastaCookers">Pasta Cookers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=RiceCookers">Rice Cookers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Toasters">Toasters & Grills</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Barbeques">Barbeques</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PizzaOvens">Pizza Ovens</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Salamander">Salamander</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SousVideCooker">Sous Vide Cooker</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SteamKettlesTiltSkillets">Steam Kettles & Tilt Skillets</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Ice Machines <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=IceMachines">Ice Machines</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=IceMachineBins">Ice Machine Bins</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Sinks <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=HandSinks">Hand Sinks</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PotSinks">Pot Sinks</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CocktailSink">Cocktail Sink</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Faucets">Faucets</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Beverage <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Juicers">Juicers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=HotWaterDispensers">Hot Water Dispensers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Blenders">Blenders</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CoffeeTeaBrewers">Coffee & Tea Brewers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ColdHotBeverageEquipmentDispensers">Cold & Hot Beverage Equipment / Dispensers</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Warming & Holding <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=HoldingProofingCabinets">Holding & Proofing Cabinets</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=HeatingLampsStrips">Heating Lamps & Strips</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SoupKettles">Soup Kettles</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=HotFoodMerchandisers">Hot Food Merchandisers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FoodWarmers">Food Warmers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SteamBuffetTables">Steam & Buffet Tables</a></li>        
+										</ul>
+									</li>
+									<li class="submenu-item"> <div>Food Preparation <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FoodProcessors">Food Processors</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FoodBlenders">Food Blenders</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=DicersSlicersChoppers">Dicers Slicers & Choppers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MeatTenderizers">Meat Tenderizers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MeatSlicers">Meat Slicers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Mandolines">Mandolines</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Mixers">Mixers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MeatProcessing">Meat Processing</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SealingPackingMachines">Sealing & Packing Machines</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PastaMachines">Pasta Machines</a></li>        
+										</ul>
+									</li>
+									<li class="submenu-item"> <div>Tables <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href='category.html?productCategory=Worktables'>Worktables</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=EquipmentStands">Equipment Stands</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Cabinets">Cabinets</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"> <div>Concession <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=HotDogsRoller">Hot Dogs Roller</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Popcorn">Popcorn</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SoftServeIceCream">Soft Serve & Ice Cream</a></li>
+											<!--<li><a href="category.html?productCategory=Cotton%20Candy%20Machine%20&%20Display">Other</a></li> -->
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Warewashing <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Dishwashers">Dishwashers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=DishRacks">Dish Racks</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=DishTables">Dish Tables</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item">SHELVING & TRANSPORT <i class="fa fa-caret-down"></i>
+								<ul class="submenu">
+									<li class="subsubmenu-item"><a href="category.html?productCategory=CartsDollies">Carts & Dollies</a></li>
+									<li class="subsubmenu-item"><a href="category.html?productCategory=WallShelves">Wall Shelves</a></li>
+									<li class="subsubmenu-item"><a href="category.html?productCategory=BunPanRacks">Bun Pan Racks</a></li>
+									<li class="subsubmenu-item"><a href="category.html?productCategory=ChromeandEpoxyWireShelves">Chrome and Epoxy Wire Shelves</a></li>
+								</ul>
+							</li>
+							<li class="menu-item">SMALLWARES <i class="fa fa-caret-down"></i>
+								<ul class="submenu">
+									<li class="submenu-item"><div>Cookware <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FryPans">Fry Pans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SautePans">Saute Pans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SaucePots">Sauce Pots</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=StockPots">Stock Pots</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Braziers">Braziers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=WoksPans">Woks Pans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=RoastingPans">Roasting Pans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PaellaPans">Paella Pans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CastIron">Cast Iron</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Sets">Sets</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Knives <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ChefKnives">Chef Knives</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BoningKnives">Boning Knives</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ParingKnives">Paring Knives</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BreadKnives">Bread Knives</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=AsianStyleKnives">Asian Style Knives</a></li>
+                            				<li class="subsubmenu-item"><a href="category.html?productCategory=UtilityKnives">Utility Knives</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Slicers">Slicers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Cleavers">Cleavers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Shears">Shears</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=KnifeSharpeners">Knife Sharpeners</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=KnifeSets">Knife Sets</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=KnifeRacksCases">Knife Racks & Cases</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Food Storage <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SteamTablePans">Steam Table Pans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FoodPans">Food Pans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FoodStorageBoxes">Food Storage Boxes</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BainMaries">Bain Maries</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=IngredientBins">Ingredient Bins</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=DoughBoxes">Dough Boxes</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BusBins">Bus Bins</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Cooking Utensils & Supplies <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Turners">Turners</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Tongs">Tongs</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CookingSpoons">Cooking Spoons</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Skimmers">Skimmers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Paddles">Paddles</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Skewers">Skewers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=DredgersShakers">Dredgers & Shakers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SteakWeights">Steak Weights</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=EggRings">Egg Rings</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Food Prep Tools & Utensils <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CanOpeners">Can Openers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Whisks">Whisks</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Graters">Graters</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Spreaders">Spreaders</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CuttingBoards">Cutting Boards</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ColandersStrainers">Colanders & Strainers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MixingBowls">Mixing Bowls</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Mashers">Mashers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=KitchenTimers">Kitchen Timers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=TortillaPresses">Tortilla Presses</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Baking Supplies <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Bakeware">Bakeware</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BakingTools">Baking Tools</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Pizza Supplies <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PizzaPansScreens">Pizza Pans & Screens</a></li> 
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PizzaStones">Pizza Stones</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PizzaPeels">Pizza Peels</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PizzaAccessories">Pizza Accessories</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Weight Measure & Portion Control <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PortioningSpoons">Portioning Spoons</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MeasuringCupsSpoons">Measuring Cups & Spoons</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Dishers">Dishers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Ladles">Ladles</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Scoops">Scoops</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Scales">Scales</a></li>	
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Barware <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PitchesCarafes">Pitchers & Carafes</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=IceHandling">Ice Handling</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BarAccessories">Bar Accessories</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BarShakers">Bar Shakers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=JiggersPourers">Jiggers & Pourers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CondimentOrganizers">Condiment Organizers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SpeedRails">Speed Rails</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Health & Food Safety <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FoodChillers">Food Chillers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FirstAid">First Aid</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Apparel & Textiles <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MittsPotHolders">Mitts & Pot Holders</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ChefWear">Chef Wear</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ProtectiveApparel">Protective Apparel</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item">DINING <i class="fa fa-caret-down"></i>
+								<ul class="submenu">
+									<li class="submenu-item"><div>Tabletop Supplies <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CoffeeTeaService">Coffee & Tea Service</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SaltPepper">Salt & Pepper</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CondimentDispensers">Condiment Dispensers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MenusGuestChecks">Menus & Guest Checks</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ServingBasketsHolders">Serving Baskets & Holders</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=TraysStands">Trays & Stands</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Drinkware <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=WineGlasses">Wine Glasses</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ChampagneFlutes">Champagne Flutes </a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CocktailGlasses">Cocktail Glasses</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BeerGlasses">Beer Glasses</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=RocksGlasses">Rocks Glasses</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PlasticTumblers">Plastic Tumblers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ShotGlasses">Shot Glasses</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SpecialityGlassware">Specialty Glassware</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Flatware <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Forks">Forks</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Knives">Knives</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Spoons">Spoons</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SteakKnives">Steak Knives</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Serveware <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ServingBowls">Serving Bowls</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PlattersBoards">Platters & Boards</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ServingUtensils">Serving Utensils</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=DrinkDispenser">Drink Dispenser</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Dinnerware <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=PlatesPlatters">Plates & Platters</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Bowls">Bowls</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=DessertDishes">Dessert Dishes</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Ramekins">Ramekins</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MugsCups">Mugs & Cups</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Buffet & Catering <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=ChafersFuel">Chafers & Fuel</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=InsulatedCarriers">Insulated Carriers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=InsulatedDeliveryBags">Insulated Delivery Bags</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BeverageServers">Beverage Servers</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item">JANITORIAL SUPPLIES <i class="fa fa-caret-down"></i>
+								<ul class="submenu">
+									<li class="submenu-item"><div>Cleaning <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Brushes">Brushes</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SpongesScourpads">Sponges & Scourpads</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=SprayBottles">Spray Bottles</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Pails">Pails</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=CleaningTowels">Cleaning Towels</a></li>	
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Restroom <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Dispensers">Dispensers</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Signage">Signage</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BabyChangeStation">Baby Change Station</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Floor Care <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=BroomsDustPans">Brooms & Dust Pans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Mops">Mops</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Squeegees">Squeegees</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=MopBuckets">Mop Buckets</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=FloorCareAccessories">Cleaning Accessories</a></li>
+										</ul>
+									</li>
+									<li class="submenu-item"><div>Waste <i class="fa fa-caret-right menuArrow"></i></div>
+										<ul class="subsubmenu">
+											<li class="subsubmenu-item"><a href="category.html?productCategory=TrashCans">Trash Cans</a></li>
+											<li class="subsubmenu-item"><a href="category.html?productCategory=Recycling">Recycling</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="quote_form.html">REQUEST A QUOTE</a></li>
+						</ul>
+					</div>
+					
+					 <div class="logoResponsive">
+						<a href="index.html"><img alt="Logo Chef supply" src="images/theChefResponsiveLogo.png"></a>
+					 </div>
+					 <div id="cart">
+						 <div id="cartCount">
+							 <a href="cart.html">
+								 <img id="cartImg" alt="Cart logo"  src="header_images/shopping-cart.png">
+								 <div id="cartAmount" class="cartAmount">0</div>
+							 </a>
+						 </div>
+					 </div>
+					 <div class="logingNav">
+						<img alt="login" src="header_images/account-logo.png">
+					 </div>
+				 
+					 <div  id="ResponsiveBar">
+						<div class="rowSearch">
+							<input type="text" id="inputBox" placeholder="Search..." autocomplete="off">
+							<button onclick="linkCreator()"><img id="searchImg" alt="Shipping"  src="header_images/search-logo.png"></button>
+				
+						</div>
+						<div class="resultBox">
+							
+						</div>
+					 </div>
+			    </nav>
+	<!--------------------------------------------NAVIGATION BAR ENDS----------------------------------------------->
+
+			</header>
+		 
+			<!-------------------------------Slideshow banner----------------------->
+
+            <div id="testPage"></div>
+
+			<!-------------------------------Footer----------------------->
+			<footer>
+				<div class="flogo">
+					
+					<a href="index.html"><img alt="Cheff Supply Logo" class="logoFooter"  src="footer_images/tcs_logo.png"></a>
+					<div class="fsocialMedia">
+					
+						<a href="https://www.facebook.com/thechefsupply" target="_blank">
+							<img id="facebookFooter" class="socialSmall" alt="Facebook Logo" class="img-fluid socialFooter"  src="footer_images/facebook.png">
+						</a>
+					
+						<a href="https://www.instagram.com/thechefsupply/" target="_blank">
+							<img alt="Instagram Logo" class="socialSmall" class="img-fluid socialFooter" src="footer_images/instagram.png">
+						</a>
+					
+						<a href="https://www.linkedin.com/company/the-chef-supply/" target="_blank">
+							<img alt="linkedin Logo" class="socialSmall" class="img-fluid socialFooter" src="footer_images/linkedin.png">
+							</a>
+					</div>
+				</div>
+				
+				
+				
+				<a class="callfo" href="https://www.google.com/maps/place/The+Chef+Supply+Inc./@43.2654265,-79.868081,17z/data=!3m1!4b1!4m21!1m14!4m13!1m4!2m2!1d-79.8653067!2d43.2654853!4e1!1m6!1m2!1s0x882c9c78425f61ab:0x3d21a4c0ee96e9d5!2sthe+chef+supply!2m2!1d-79.8655061!2d43.2654226!3e0!3m5!1s0x882c9c78425f61ab:0x3d21a4c0ee96e9d5!8m2!3d43.2654226!4d-79.8655061!16s%2Fg%2F1tcx7nj5?entry=ttu" target="_blank">
+					<img alt="Locaation Logo"  class="img-fluid addressLogo " src="footer_images/location.png">
+					<p class="address">351 James Street North <br>Hamilton, ON, L8L 1H4</p>
+				</a>
+				<a class="addressfo" href="tel:+19055235250">
+					<img id="fphone" alt="Phone Logo" class="img-fluid phoneLogo" src="footer_images/phone.png">
+					<p class="phone">905-523-5250</p>
+				</a>
+				<div class="fus">
+					<h3>ABOUT US</h3>
+					<a href="about_us.html"><p>Our History</p></a>
+					<a href="contact_us.html"><p>Contact Us</p></a>
+					<p>FAQs</p>	
+				</div>
+				<div class="faccount">
+					<h3>ACCOUNT</h3>
+					<p>Checkout</p>
+					<p>My Account</p>
+					<p>Wish List</p>
+				</div>
+				<div class="fpolicies">
+					<h3>POLICIES</h3>
+					<p>Return Policy</p>
+					<p>Shipping Policy</p>
+					<p>Terms and Conditions</p>
+					<p>Privacy Policy</p>
+				</div>
+				<div class="foterHide">
+					<a href="about_us.html"><h3>ABOUT US</h3></a>
+					<h3>ACCOUNT</h3>
+					<h3>POLICIES</h3>
+				</div>
+			
+				<div class="copyright">
+					<p> &copy; 2023 The Chef Supply Inc. Copyright. </p>
+				</div>
+				
+			</footer>
+	</body>
+</html>
